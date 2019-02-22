@@ -5,6 +5,7 @@ class Labor1
         final char a=2,b=2;
         final int m=10,n=11;
         double s=0;
+
         if(c>=a && c<=n)
             System.out.println("Виникає ділення на 0");
         else{
