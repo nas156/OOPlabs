@@ -6,7 +6,7 @@ public class Labor3 {
     public static void main(String[] args) {
         final int a=5;
         char [] bukva={'b',  'c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z'};
-        StringBuilder z = new StringBuilder("Hello, fkslds dkslajkfkla fs fakfaskklfa. Marka, natasha. aovba");
+        StringBuilder z = new StringBuilder("Hello, kash, fkslds dkslajkfkla fs fakfaskklfa. Marka, natasha. aovba");
         String[] b= (z.toString()).split(" ");
         z.delete(0,z.length());
         ArrayList<String> l= new ArrayList<>();
@@ -25,9 +25,9 @@ public class Labor3 {
                     if (b[i].length()==(a+1))
                         l.remove(b[i]);
                 }
-                else
-                    if (b[i].length()==a)
-                        l.remove(b[i]);}
+                    else
+                        if (b[i].length()==a)
+                            l.remove(b[i]);}
             }
         }
         for (int i = 0; i <(l.toArray()).length ; i++) {
