@@ -5,7 +5,7 @@ public class Labor2 {
             int a=0;
             final double[][] c = {
                     {1, 2, 3, 4, 5},
-                    {1, 2, 3, 4, 5},
+                    {1, 2, 5, 4, 5},
                     {1, 2, 3, 4, 5},
                     {1, 2, 3, 4, 5}};
             double[][] z= new double[c.length][c[0].length];
@@ -37,8 +37,9 @@ public class Labor2 {
                 }
                 System.out.println();
             }
-            double n = z[0][0], S = 0;
+            double n, S = 0;
             for (int i = 0; i < c[0].length; i++) {
+                n=z[0][i];
                 for (int j = 0; j < c.length; j++) {
                     if (z[j][i] > n) {
                         n = z[j][i];
