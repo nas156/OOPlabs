@@ -48,5 +48,7 @@ public class Labor2 {
             }
             System.out.println("\nResult: " + S);
         }
+
     }
+
 
