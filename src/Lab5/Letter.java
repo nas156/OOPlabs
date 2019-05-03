@@ -1,3 +1,5 @@
+package Lab5;
+
 import java.util.Arrays;
 
 public class Letter {

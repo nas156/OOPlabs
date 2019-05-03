@@ -1,3 +1,5 @@
+package Lab5;
+
 public class Punctuation {
     static final String punctuationSymbols = "!.?,;:";
     private String punctuationsString;

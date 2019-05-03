@@ -1,4 +1,6 @@
-import java.util.Arrays;
+package Lab5;
+
+import Lab5.Sentence;
 
 public class Text {
     private Sentence[] sentences;

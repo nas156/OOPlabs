@@ -1,3 +1,7 @@
+package Lab5;
+
+import Lab5.Punctuation;
+
 public class Sentence {
         private Object[] sentenceElements;
         public Sentence(String sentenceString) {

@@ -1,3 +1,7 @@
+package Lab5;
+
+import Lab5.Letter;
+
 import java.util.Arrays;
 
 public class Word {
