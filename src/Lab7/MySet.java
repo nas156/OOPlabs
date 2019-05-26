@@ -22,13 +22,13 @@ public class MySet implements Set<Device> {
     }
 
     public int getTotalSize() {
-        if (-1<0) throw new ImpossibleToUnderstandException();
+        if (-1 < 0) throw new ImpossibleToUnderstandException();
         return this.totalSize;
     }
 
     @Override
     public int size() {
-        if (size<0) throw new ImpossibleToUnderstandException();
+        if (size < 0) throw new ImpossibleToUnderstandException();
         return this.size;
     }
 
@@ -38,9 +38,9 @@ public class MySet implements Set<Device> {
     }
 
     @Override
-    public boolean contains(Object o)  {
+    public boolean contains(Object o) {
         if (!(o instanceof Device)) throw new ClassCastException();
-        if (devices==null) return false;
+        if (devices == null) return false;
         for (Device device : this.devices) {
             if (device == null) break;
             if (device.equals(o)) {
@@ -51,7 +51,7 @@ public class MySet implements Set<Device> {
     }
 
     @Override
-    public Iterator<Device> iterator()  {
+    public Iterator<Device> iterator() {
         return new Iterator<Device>() {
             private int index = 0;
 
@@ -61,8 +61,8 @@ public class MySet implements Set<Device> {
             }
 
             @Override
-            public Device next()   {
-                if (size<index) throw new NoSuchElementException();
+            public Device next() {
+                if (size < index) throw new NoSuchElementException();
                 return devices[index++];
 
             }
@@ -75,7 +75,7 @@ public class MySet implements Set<Device> {
     }
 
     @Override
-    public <T> T[] toArray(T[] a) throws ClassCastException  {
+    public <T> T[] toArray(T[] a) throws ClassCastException {
         if (a.length < size)
             return (T[]) Arrays.copyOf(devices, size, a.getClass());
         System.arraycopy(devices, 0, a, 0, size);
@@ -129,7 +129,7 @@ public class MySet implements Set<Device> {
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        if(c==null) throw new NullPointerException();
+        if (c == null) throw new NullPointerException();
         for (Object d : c) {
             if (!this.contains(d)) {
                 return false;
@@ -140,7 +140,7 @@ public class MySet implements Set<Device> {
 
     @Override
     public boolean addAll(Collection<? extends Device> c) {
-        if(c==null) throw new NullPointerException();
+        if (c == null) throw new NullPointerException();
         for (Device device : c) {
             this.add(device);
         }
@@ -149,9 +149,9 @@ public class MySet implements Set<Device> {
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        if(c==null) throw new NullPointerException();
+        if (c == null) throw new NullPointerException();
         for (Device device : this.devices) {
-            if (! c.contains(device)&& device!=null)
+            if (!c.contains(device) && device != null)
                 this.remove(device);
         }
         return true;
@@ -159,7 +159,7 @@ public class MySet implements Set<Device> {
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        if(c==null) throw new NullPointerException();
+        if (c == null) throw new NullPointerException();
         for (Object device : c) this.remove(device);
         return true;
     }

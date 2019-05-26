@@ -16,6 +16,7 @@ public class ImpossibleToUnderstandException extends RuntimeException {
         System.out.println("Again?");
     }
 
+
     /**
      * Constructs a {@code ImpossibleToUnderstandException} with the specified
      * detail message.
