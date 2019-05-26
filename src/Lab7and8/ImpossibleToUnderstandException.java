@@ -1,4 +1,4 @@
-package Lab7;
+package Lab7and8;
 
 /**
  * Thrown when exception is not understood, when "My code is perfect, why does not it work?".

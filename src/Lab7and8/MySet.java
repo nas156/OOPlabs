@@ -1,8 +1,7 @@
-package Lab7;
+package Lab7and8;
 
 import Lab6.Device;
 
-import javax.lang.model.type.NullType;
 import java.util.*;
 
 public class MySet implements Set<Device> {

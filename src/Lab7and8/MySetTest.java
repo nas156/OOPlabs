@@ -1,4 +1,4 @@
-package Lab7;
+package Lab7and8;
 
 import Lab6.Device;
 import Lab6.Refrigirator;

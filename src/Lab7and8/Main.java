@@ -1,4 +1,4 @@
-package Lab7;
+package Lab7and8;
 
 import Lab6.Device;
 import Lab6.Refrigirator;
@@ -6,7 +6,6 @@ import Lab6.VaccumCleaner;
 import Lab6.WashingMachine;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
